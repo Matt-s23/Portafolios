@@ -23,39 +23,210 @@
 
 ---
 
-<div align="center">
-
 ## UNIDAD 1
 
-<div style="text-align: justify; width: 80%; margin: auto;">
+</div>
 
-### Contenidos
+<div style="text-align: justify;">
 
-**Algoritmo** 
+### Conceptos Fundamentales de Programación
 
-Es un conjunto de instrucciones sistemáticas, que busca resolver un problema determinado a través de secuencias lógicas, definidas por un programador, evitando a toda costa una ambigüedad
+**Algoritmo**  
+Un algoritmo se define como un conjunto ordenado y finito de operaciones o pasos lógicos que permiten hallar la solución a un problema determinado. En el ámbito de la informática, constituye la base sobre la cual se construye cualquier proceso de software, debiendo ser preciso, estar bien definido y ser finito. Su importancia radica en que permite estructurar la lógica de resolución antes de ser traducida a un lenguaje que la computadora pueda procesar.
 
-<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/dcbe2cd0-cc4a-43cd-ab38-42a3794b8ff2" />
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/73065d5b-ebe4-4ed3-86f9-7ee62936a3d1" />
+</p>
 
-**pseudocódigo**
-**diagrama de flujo**
-**prueba de escritorio** 
-**lenguajes de programación**
-* **Metodología:** Programación por bloques.
+**Pseudocódigo**  
+El pseudocódigo es una herramienta de programación que utiliza un lenguaje intermedio entre el lenguaje humano y el código de programación real. No es un lenguaje ejecutable por una máquina, sino una técnica para que el programador se concentre en la lógica del algoritmo sin preocuparse por las reglas sintácticas estrictas de un lenguaje específico. Facilita la transición de la idea mental a la implementación técnica final.
 
-### 💻 Ejercicio con estructura secuencial
-> **Lenguaje utilizado:** [Ej: Python / C++ / Java]
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/78ef6310-59d8-4a54-888e-c147db02546a" />
+</p>
 
-1. **Planteamiento del problema:** [Escribe aquí de qué trata el problema que resolviste]
+**Diagrama de Flujo**  
+El diagrama de flujo es la representación gráfica de un algoritmo, donde se utilizan símbolos estandarizados como óvalos, rombos y rectángulos para describir la secuencia de pasos de un proceso. Estas figuras se conectan mediante flechas que indican la dirección del flujo de los datos y el control. Es una herramienta visual fundamental para identificar posibles errores lógicos y para comunicar la estructura de un programa a otros desarrolladores de manera sencilla.
 
-2. **Análisis del problema:** [Describe las entradas, procesos y salidas]
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/c83c1fbe-88b6-43d6-bb24-87e098597062" />
+</p>
 
-3. **Diseño del algoritmo:** * **Diagrama de Flujo:** ![Diagrama de Flujo](LINK_O_RUTA_DE_TU_IMAGEN_DIAGRAMA)
-   * **Pseudocódigo:** ```text
-     [Pega aquí tu pseudocódigo]
-     ```
+**Prueba de Escritorio**  
+La prueba de escritorio es un proceso de verificación manual en el que el programador sigue paso a paso las instrucciones de un algoritmo utilizando valores de entrada específicos. El objetivo es validar que el algoritmo produce los resultados esperados y detectar fallos en la lógica o en el manejo de las variables antes de realizar la codificación. Generalmente se organiza en una tabla donde se registran los cambios de valor en cada variable conforme avanza la ejecución.
 
-4. **Codificación (Código Fuente):** ```cpp
-   // Pega tu código aquí
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/0683985c-fa0f-4ffd-9631-6a108fc565db" />
+</p>
+
+**Lenguajes de Programación**  
+Los lenguajes de programación son sistemas de comunicación estructurados que permiten a un ser humano dar instrucciones precisas a una computadora para que realice tareas específicas. Estos se dividen principalmente en lenguajes de bajo nivel (cercanos al hardware) y lenguajes de alto nivel (más legibles y abstractos). Cada lenguaje posee su propia sintaxis y semántica, adaptándose a diferentes necesidades como el desarrollo web, la ciencia de datos o la creación de sistemas operativos.
+
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/d1e6b552-99ef-43e8-b7b0-4f1e0dc499b7" />
+</p>
+
+**Programación por Bloques**  
+La programación por bloques es un paradigma de desarrollo visual que sustituye la escritura de texto por el uso de piezas gráficas que encajan entre sí, similar a un rompecabezas. Cada bloque contiene una instrucción lógica (como un bucle o una condición), lo que permite al usuario centrarse en el pensamiento computacional y la resolución de problemas sin el riesgo de cometer errores de escritura. Es ampliamente utilizada en entornos educativos como Scratch o Blockly para facilitar el aprendizaje inicial.
+
+<p align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/979ea4ec-f546-41c3-ae00-fc687f073aa1" />
+</p>
+
+<div align="center">
+
+## EJERCICIOS CON ESTRUCTURA SECUENCIAL
+
+</div>
+
+<div style="text-align: justify;">
+
+### Ejercicio 1: Cálculo de presupuesto en PSeInt
+
+**Planteamiento del problema**  
+El problema consiste en desarrollar una solución automatizada para un almacén que necesita calcular el costo total de un trabajo basado en la extensión de superficie procesada. Se requiere que el sistema permita el ingreso de una medida variable y aplique una tarifa estándar para generar el monto final de cobro.
+
+**Análisis del problema**  
+Para resolver este requerimiento, se identifica como entrada principal la cantidad de metros cuadrados (m2), la cual debe ser un número real para permitir decimales. El proceso interno consiste en asignar un valor constante de 50 a la variable Trabajo y realizar la multiplicación de esta tarifa por los metros cuadrados ingresados. La salida esperada es el valor almacenado en la variable Precio.
+
+**Diseño del algoritmo**
+
+<p align="center">
+<img width="620" height="681" alt="image" src="https://github.com/user-attachments/assets/26a27771-30a1-482a-9d11-916dcd0c5c05" />
+</p>
+
+**Codificación**
+
+<p align="center">
+<img width="1109" height="732" alt="image" src="https://github.com/user-attachments/assets/9e12b524-3d1a-4f7e-904f-87c11a7637b3" />
+  
+<img width="555" height="372" alt="image" src="https://github.com/user-attachments/assets/33063871-bd50-4fa7-9184-e1895d4f7efe" />
+</p>
+
+**Validación**
+
+<p align="center">
+<img width="650" height="226" alt="image" src="https://github.com/user-attachments/assets/1ee9570a-f10a-4280-be0c-34cf3e7e6532" />
+</p>
+
+---
+
+### Ejercicio 2: Sistema de comisiones en Lenguaje C
+
+**Planteamiento del problema**  
+Se busca crear un programa en lenguaje C que gestione el pago de comisiones de ventas de una empresa. El sistema debe procesar tres montos de ventas predefinidos de diferentes clientes, aplicar una tasa de comisión del 4% a cada uno y calcular el gasto total que representa para la empresa el pago de estas bonificaciones.
+
+**Análisis del problema**  
+En el análisis se determinan tres constantes de tipo flotante para los montos de las ventas correspondientes a 30,000.00, 29,000.00 y 33,000.00. El proceso matemático requiere calcular el 4% individualmente para cada venta (porcentaje1, porcentaje2, porcentaje3) y sumarlos en una variable global denominada pagototal. Las salidas deben ser tanto el total acumulado como el desglose por cada vendedor.
+
+**Diseño del algoritmo**  
+El diseño sigue una estructura secuencial clásica de la programación en C, comenzando con la inclusión de las librerías estándar stdio.h y math.h. Posteriormente, se define la función principal main(), donde se declaran las constantes y variables necesarias para asegurar un manejo eficiente de la memoria antes de ejecutar las operaciones de asignación y cálculo lógico.
+
+**Codificación**
+
+<p align="center">
+<img width="1086" height="730" alt="image" src="https://github.com/user-attachments/assets/8ac9ff11-8023-4286-acdc-e7c0d0ef064a" />
+</p>
+
+<p align="center">
+<img width="912" height="233" alt="image" src="https://github.com/user-attachments/assets/94e8c4ff-66ba-4a32-bb89-b606e6990f5e" />
+</p>
+
+
+**Validación**
+
+<p align="center">
+<img width="591" height="238" alt="image" src="https://github.com/user-attachments/assets/fa3bafcd-c682-4eab-bab3-92f47abff73b" />
+</p>
+
+</div>
+---
+
+<div align="center">
+
+## REFLEXIONES Y METODOLOGÍA
+
+</div>
+
+<div style="text-align: justify;">
+
+**METODOLOGÍA**
+
+**Paso 1. Definición del Marco Teórico**  
+El proceso inició con la recopilación de conceptos base para asegurar la precisión técnica del informe. Se investigaron las definiciones formales de algoritmos y pseudocódigo para establecer el lenguaje técnico que se utilizaría en todo el documento.
+
+**Paso 2. Búsqueda de Fuentes Digitales**  
+Se realizó una búsqueda selectiva de información en portales educativos y documentación oficial en español. El objetivo fue obtener referencias bibliográficas bajo la norma IEEE que respaldaran cada uno de los temas tratados, desde los diagramas de flujo hasta la programación por bloques.
+
+**Paso 3. Planteamiento de los Problemas**  
+Se redactaron los problemas específicos a resolver basándose en los requerimientos del almacén. En este punto se definieron los escenarios de uso: el cálculo de costos por superficie para PSeInt y la gestión de comisiones de ventas para el lenguaje C.
+
+**Paso 4. Análisis Técnico de Variables**  
+Se procedió a desglosar los elementos de cada problema. Se identificaron los datos de entrada, como los montos de ventas de tres clientes distintos y los metros cuadrados, determinando que debían procesarse como valores reales para mantener la precisión decimal.
+
+**Paso 5. Diseño Lógico del Algoritmo**  
+Antes de escribir el código final, se diseñó la lógica de forma abstracta. Se establecieron las constantes, como el porcentaje de comisión del cuatro por ciento y la tarifa de trabajo de cincuenta, asegurando que el orden de las operaciones matemáticas fuera el correcto.
+
+**Paso 6. Representación Gráfica**  
+Se elaboraron los diagramas de flujo para visualizar la trayectoria de los datos. Este paso permitió verificar que la estructura secuencial fuera lógica y que el programa tuviera un punto de inicio y un punto de fin claramente definidos.
+
+**Paso 7. Implementación en PSeInt**  
+Se realizó la codificación en el entorno PSeInt utilizando comandos en español. Se aplicaron las instrucciones de leer y escribir para gestionar la interacción con el usuario y se asignaron los cálculos a las variables correspondientes.
+
+**Paso 8. Codificación en Lenguaje C**  
+Se tradujo la lógica al lenguaje C utilizando un editor de texto profesional. Se incluyeron las librerías necesarias, se definieron las constantes de tipo flotante y se configuró la función principal para realizar los cálculos de las tres comisiones y el pago total acumulado.
+
+**Paso 9. Ejecución y Compilación**  
+Los programas fueron sometidos a procesos de compilación y ejecución en la terminal. Se verificó que no existieran errores de sintaxis y que las salidas de texto en pantalla fueran claras y estuvieran justificadas de acuerdo a lo solicitado.
+
+**Paso 10. Validación mediante Prueba de Escritorio**  
+Se creó una tabla en Excel para realizar el seguimiento manual de cada variable. Se compararon los resultados calculados a mano con los obtenidos por la computadora para confirmar que la lógica del programa fuera exacta y libre de fallos.
+
+**Paso 11. Reflexión y Cierre**  
+Se elaboró una reflexión crítica sobre el aprendizaje obtenido durante el proceso de desarrollo. Finalmente, se redactó la conclusión y la declaración de uso de inteligencia artificial para transparentar el apoyo recibido en la estructuración y organización del trabajo.
+
+### Principales dificultades y reflexión crítica
+
+**Reflexión**  
+El desarrollo de soluciones computacionales, ya sea mediante pseudocódigo o lenguajes de alto nivel como C, demuestra que la programación no es solo un ejercicio de escritura de código, sino un proceso riguroso de estructuración del pensamiento. Al trabajar con estructuras secuenciales, se hace evidente la importancia de la precisión en el análisis previo; un error en la definición de una constante o en la interpretación de un requerimiento (como el porcentaje de comisión) puede derivar en resultados erróneos independientemente de qué tan bien esté escrito el programa. La transición del diagrama de flujo al código fuente nos enseña que la lógica es universal, pero la implementación exige un dominio de la sintaxis y las reglas específicas del lenguaje para que la máquina ejecute fielmente nuestra intención.
+
+**Conclusión**  
+En conclusión, la aplicación de algoritmos y el uso de herramientas como PSeInt y el compilador de C permiten validar que la resolución de problemas técnicos depende fundamentalmente de la descomposición de tareas en pasos finitos y lógicos. La estructura secuencial aplicada en estos ejercicios desde el cálculo de costos por superficie hasta la gestión de comisiones resalta que la entrada, el proceso y la salida son los pilares de cualquier sistema funcional. Además, la práctica constante de realizar pruebas de escritorio garantiza la fiabilidad del software, asegurando que el producto final sea una herramienta útil y precisa para la toma de decisiones en entornos reales como almacenes o departamentos financieros.
+
+**Declaración de Uso de Inteligencia Artificial**  
+Para la elaboración de este documento, se contó con la asistencia de Gemini, una inteligencia artificial generativa. La herramienta fue utilizada como apoyo para la estructuración de la información, el desarrollo de las reflexiones críticas, las conclusiones y la organización de los puntos de análisis de los ejercicios prácticos presentados. Todos los resultados generados por la IA fueron revisados, validados y ajustados por el autor para asegurar su precisión técnica y su alineación con los requerimientos académicos establecidos.
+
+</div>
+
+<div align="center">
+
+---
+### BIBLIOGRAFÍA COMPLEMENTARIA
+
+</div>
+
+<div style="text-align: justify;">
+
+[1] PSeInt, "PSeInt: Un software libre para iniciarse en la programación," PSeInt Project, 2024. [En línea]. Disponible en: http://pseint.sourceforge.net/
+
+[2] Khan Academy, "Algoritmos y programación: conceptos básicos de lógica computacional," 2024. [En línea]. Disponible en: https://es.khanacademy.org/computing/computer-science/algorithms
+
+[3] Microsoft Learn, "Introducción al lenguaje C y estructuras de programación," Microsoft Documentation, 2023. [En línea]. Disponible en: https://learn.microsoft.com/es-es/cpp/c-language/
+
+[4] Instituto de Tecnologías Educativas, "Diagramas de flujo y simbología estándar," Ministerio de Educación de España, 2022. [En línea]. Disponible en: https://www.intef.es/
+
+[5] Scratch Foundation, "Aprender a programar con bloques: pensamiento computacional," MIT Media Lab, 2024. [En línea]. Disponible en: https://scratch.mit.edu/
+
+[6] Universidad Nacional Autónoma de México (UNAM), "Pseudocódigo y lógica de programación," Coordinación de Universidad Abierta y Educación Digital, 2023. [En línea]. Disponible en: https://www.unamesp.edu.mx/
+
+[7] Desarrollo Web, "Historia y evolución de los lenguajes de programación," 2024. [En línea]. Disponible en: https://desarrolloweb.com/articulos/historia-lenguajes-programacion.html
+
+[8] G. Ferrera, "La importancia de las pruebas de escritorio en el desarrollo de software," Manuales de Programación, 2022. [En línea]. Disponible en: https://www.manualesprogramacion.com/
+
+<div align="center">
+  
+</div>
+
+
 ## Unidad 2
 ## Unidad 3
