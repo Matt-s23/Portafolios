@@ -144,48 +144,11 @@ El diseño sigue una estructura secuencial clásica de la programación en C, co
 
 <div align="center">
 
-## REFLEXIONES Y METODOLOGÍA
+### Principales dificultades y reflexión crítica
 
 </div>
 
 <div style="text-align: justify;">
-
-**METODOLOGÍA**
-
-**Paso 1. Definición del Marco Teórico**  
-El proceso inició con la recopilación de conceptos base para asegurar la precisión técnica del informe. Se investigaron las definiciones formales de algoritmos y pseudocódigo para establecer el lenguaje técnico que se utilizaría en todo el documento.
-
-**Paso 2. Búsqueda de Fuentes Digitales**  
-Se realizó una búsqueda selectiva de información en portales educativos y documentación oficial en español. El objetivo fue obtener referencias bibliográficas bajo la norma IEEE que respaldaran cada uno de los temas tratados, desde los diagramas de flujo hasta la programación por bloques.
-
-**Paso 3. Planteamiento de los Problemas**  
-Se redactaron los problemas específicos a resolver basándose en los requerimientos del almacén. En este punto se definieron los escenarios de uso: el cálculo de costos por superficie para PSeInt y la gestión de comisiones de ventas para el lenguaje C.
-
-**Paso 4. Análisis Técnico de Variables**  
-Se procedió a desglosar los elementos de cada problema. Se identificaron los datos de entrada, como los montos de ventas de tres clientes distintos y los metros cuadrados, determinando que debían procesarse como valores reales para mantener la precisión decimal.
-
-**Paso 5. Diseño Lógico del Algoritmo**  
-Antes de escribir el código final, se diseñó la lógica de forma abstracta. Se establecieron las constantes, como el porcentaje de comisión del cuatro por ciento y la tarifa de trabajo de cincuenta, asegurando que el orden de las operaciones matemáticas fuera el correcto.
-
-**Paso 6. Representación Gráfica**  
-Se elaboraron los diagramas de flujo para visualizar la trayectoria de los datos. Este paso permitió verificar que la estructura secuencial fuera lógica y que el programa tuviera un punto de inicio y un punto de fin claramente definidos.
-
-**Paso 7. Implementación en PSeInt**  
-Se realizó la codificación en el entorno PSeInt utilizando comandos en español. Se aplicaron las instrucciones de leer y escribir para gestionar la interacción con el usuario y se asignaron los cálculos a las variables correspondientes.
-
-**Paso 8. Codificación en Lenguaje C**  
-Se tradujo la lógica al lenguaje C utilizando un editor de texto profesional. Se incluyeron las librerías necesarias, se definieron las constantes de tipo flotante y se configuró la función principal para realizar los cálculos de las tres comisiones y el pago total acumulado.
-
-**Paso 9. Ejecución y Compilación**  
-Los programas fueron sometidos a procesos de compilación y ejecución en la terminal. Se verificó que no existieran errores de sintaxis y que las salidas de texto en pantalla fueran claras y estuvieran justificadas de acuerdo a lo solicitado.
-
-**Paso 10. Validación mediante Prueba de Escritorio**  
-Se creó una tabla en Excel para realizar el seguimiento manual de cada variable. Se compararon los resultados calculados a mano con los obtenidos por la computadora para confirmar que la lógica del programa fuera exacta y libre de fallos.
-
-**Paso 11. Reflexión y Cierre**  
-Se elaboró una reflexión crítica sobre el aprendizaje obtenido durante el proceso de desarrollo. Finalmente, se redactó la conclusión y la declaración de uso de inteligencia artificial para transparentar el apoyo recibido en la estructuración y organización del trabajo.
-
-### Principales dificultades y reflexión crítica
 
 **Reflexión**  
 El desarrollo de soluciones computacionales, ya sea mediante pseudocódigo o lenguajes de alto nivel como C, demuestra que la programación no es solo un ejercicio de escritura de código, sino un proceso riguroso de estructuración del pensamiento. Al trabajar con estructuras secuenciales, se hace evidente la importancia de la precisión en el análisis previo; un error en la definición de una constante o en la interpretación de un requerimiento (como el porcentaje de comisión) puede derivar en resultados erróneos independientemente de qué tan bien esté escrito el programa. La transición del diagrama de flujo al código fuente nos enseña que la lógica es universal, pero la implementación exige un dominio de la sintaxis y las reglas específicas del lenguaje para que la máquina ejecute fielmente nuestra intención.
