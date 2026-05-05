@@ -102,6 +102,7 @@ Para resolver este requerimiento, se identifica como entrada principal la cantid
 
 **ejecución de programa**
 
+<p align="center">
 <img width="555" height="372" alt="image" src="https://github.com/user-attachments/assets/33063871-bd50-4fa7-9184-e1895d4f7efe" />
 </p>
 
@@ -165,7 +166,14 @@ Para la elaboración de este documento, se contó con la  inteligencia artificia
 <div align="center">
 
 ---
-### BIBLIOGRAFÍA COMPLEMENTARIA
+
+## Unidad 2
+## Unidad 3
+
+--
+
+--
+### BIBLIOGRAFÍA 
 
 </div>
 
@@ -191,6 +199,3 @@ Para la elaboración de este documento, se contó con la  inteligencia artificia
   
 </div>
 
-
-## Unidad 2
-## Unidad 3
