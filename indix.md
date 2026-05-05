@@ -158,9 +158,6 @@ El desarrollo de soluciones computacionales, ya sea mediante pseudocódigo o len
 **Conclusión**  
 En conclusión, la aplicación de algoritmos y el uso de herramientas como PSeInt y el compilador de C permiten validar que la resolución de problemas técnicos depende fundamentalmente de la descomposición de tareas en pasos finitos y lógicos. La estructura secuencial aplicada en estos ejercicios desde el cálculo de costos por superficie hasta la gestión de comisiones resalta que la entrada, el proceso y la salida son los pilares de cualquier sistema funcional. Además, la práctica constante de realizar pruebas de escritorio garantiza la fiabilidad del software, asegurando que el producto final sea una herramienta útil y precisa para la toma de decisiones en entornos reales como almacenes o departamentos financieros.
 
-**Declaración de Uso de Inteligencia Artificial**  
-Para la elaboración de este documento, se contó con la  inteligencia artificial g. La herramienta fue utilizada como apoyo para la estructuración de la información, el desarrollo de las reflexiones críticas, las conclusiones y la organización de los puntos , para asegurar con los requerimientos académicos establecidos.
-
 </div>
 
 <div align="center">
@@ -170,9 +167,24 @@ Para la elaboración de este documento, se contó con la  inteligencia artificia
 ## Unidad 2
 ## Unidad 3
 
---
+
+---
+
+### Declaración de Uso de Inteligencia Artificial
+
+</div>
+
+<div style="text-align: justify;">
+
+Para la elaboración de este documento, se contó con la inteligencia artificial **Gemini**. La herramienta fue utilizada como apoyo para la estructuración de la información, el desarrollo de las reflexiones críticas, las conclusiones y la organización de los puntos, para asegurar el cumplimiento con los requerimientos académicos establecidos.
+
+<div align="center">
+  
+</div>
 
 --
+
+
 ### BIBLIOGRAFÍA 
 
 </div>
