@@ -103,7 +103,7 @@ Para resolver este requerimiento, se identifica como entrada principal la cantid
 <img width="555" height="372" alt="image" src="https://github.com/user-attachments/assets/33063871-bd50-4fa7-9184-e1895d4f7efe" />
 </p>
 
-**Validación**
+**Prueba de escritorio**
 
 <p align="center">
 <img width="650" height="226" alt="image" src="https://github.com/user-attachments/assets/1ee9570a-f10a-4280-be0c-34cf3e7e6532" />
@@ -133,7 +133,7 @@ El diseño sigue una estructura secuencial clásica de la programación en C, co
 </p>
 
 
-**Validación**
+**Prueba de escritorio**
 
 <p align="center">
 <img width="591" height="238" alt="image" src="https://github.com/user-attachments/assets/fa3bafcd-c682-4eab-bab3-92f47abff73b" />
