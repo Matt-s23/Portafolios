@@ -95,11 +95,13 @@ Para resolver este requerimiento, se identifica como entrada principal la cantid
 <img width="620" height="681" alt="image" src="https://github.com/user-attachments/assets/26a27771-30a1-482a-9d11-916dcd0c5c05" />
 </p>
 
-**Codificación**
+**Diagrama de flujo**
 
 <p align="center">
 <img width="1109" height="732" alt="image" src="https://github.com/user-attachments/assets/9e12b524-3d1a-4f7e-904f-87c11a7637b3" />
-  
+
+**ejecución de programa**
+
 <img width="555" height="372" alt="image" src="https://github.com/user-attachments/assets/33063871-bd50-4fa7-9184-e1895d4f7efe" />
 </p>
 
@@ -119,14 +121,13 @@ Se busca crear un programa en lenguaje C que gestione el pago de comisiones de v
 **Análisis del problema**  
 En el análisis se determinan tres constantes de tipo flotante para los montos de las ventas correspondientes a 30,000.00, 29,000.00 y 33,000.00. El proceso matemático requiere calcular el 4% individualmente para cada venta (porcentaje1, porcentaje2, porcentaje3) y sumarlos en una variable global denominada pagototal. Las salidas deben ser tanto el total acumulado como el desglose por cada vendedor.
 
-**Diseño del algoritmo**  
-El diseño sigue una estructura secuencial clásica de la programación en C, comenzando con la inclusión de las librerías estándar stdio.h y math.h. Posteriormente, se define la función principal main(), donde se declaran las constantes y variables necesarias para asegurar un manejo eficiente de la memoria antes de ejecutar las operaciones de asignación y cálculo lógico.
-
-**Codificación**
+**Diseño del algoritmo**
 
 <p align="center">
 <img width="1086" height="730" alt="image" src="https://github.com/user-attachments/assets/8ac9ff11-8023-4286-acdc-e7c0d0ef064a" />
 </p>
+
+**ejecución de programa**
 
 <p align="center">
 <img width="912" height="233" alt="image" src="https://github.com/user-attachments/assets/94e8c4ff-66ba-4a32-bb89-b606e6990f5e" />
