@@ -1,578 +1,1048 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--         ▼  REEMPLAZA CON TU IMAGEN  ▼                          -->
-<!--  <img src="./assets/logo_unl.png" width="180" alt="Logo UNL"/> -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<title>Portafolio — Lógica Proposicional</title>
 
-<br/>
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=1&pause=99999&color=5B8DD9&center=true&vCenter=true&width=480&lines=UNIVERSIDAD+NACIONAL+DE+LOJA"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=1&pause=99999&color=003366&center=true&vCenter=true&width=480&lines=UNIVERSIDAD+NACIONAL+DE+LOJA" alt="UNL"/>
-</picture>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=1&pause=99999&color=003366&center=true&vCenter=true&width=700&lines=Portafolio+%E2%80%94+Unidad+1" alt="Portafolio Unidad 1"/>
-</h1>
+<!-- ===== Icons ===== -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
 
-<h3>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=1&pause=99999&color=5B8DD9&center=true&vCenter=true&width=600&lines=%E2%8A%A2+L%C3%B3gica+Proposicional" alt="Lógica Proposicional"/>
-</h3>
+<!-- ===== MathJax ===== -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<br/>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   Asignatura   ·   Matemáticas Discretas                         ║
-║   Estudiante   ·   [ TU NOMBRE COMPLETO ]                        ║
-║   Docente      ·   [ NOMBRE DEL DOCENTE ]                        ║
-║   Período      ·   2026  ·  Universidad Nacional de Loja         ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+<style>
 
-<br/>
+/* =========================================================
+   ROOT
+========================================================= */
 
-[![Portafolio](https://img.shields.io/badge/PORTAFOLIO-INDIVIDUAL-003366?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=003366)](.)
-[![Unidad](https://img.shields.io/badge/UNIDAD_1_DE_3-COMPLETA-5b8dd9?style=for-the-badge&logo=checkmarx&logoColor=white&labelColor=1a1a2e)](.)
-[![Lógica](https://img.shields.io/badge/LÓGICA-PROPOSICIONAL-0d6efd?style=for-the-badge&logo=academia&logoColor=white&labelColor=0a3060)](.)
+:root{
+  --bg: #0b1120;
+  --sidebar: #111827;
+  --card: #172033;
+  --card-2: #1d2940;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #5b8dd9;
+  --primary-dark: #003366;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 18px;
+  --transition: 0.25s ease;
+}
 
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:linear-gradient(
+    135deg,
+    #0b1120 0%,
+    #101827 40%,
+    #0f172a 100%
+  );
+
+  color:var(--text);
+  min-height:100vh;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.container{
+  display:flex;
+  min-height:100vh;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+  width:320px;
+  background:rgba(17,24,39,0.96);
+  border-right:1px solid var(--border);
+
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+
+  overflow-y:auto;
+  padding:28px;
+
+  backdrop-filter: blur(18px);
+  z-index:999;
+}
+
+/* Logo */
+
+.logo{
+  margin-bottom:30px;
+}
+
+.logo h1{
+  font-size:1.3rem;
+  line-height:1.4;
+  font-weight:800;
+}
+
+.logo span{
+  color:var(--primary);
+}
+
+.logo p{
+  color:var(--muted);
+  margin-top:8px;
+  font-size:0.9rem;
+}
+
+/* Navigation */
+
+.nav-section{
+  margin-bottom:18px;
+}
+
+.nav-btn{
+  width:100%;
+  border:none;
+  outline:none;
+  cursor:pointer;
+
+  background:var(--card);
+
+  color:white;
+  padding:15px 18px;
+
+  border-radius:14px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:0.95rem;
+  font-weight:600;
+
+  transition:var(--transition);
+
+  margin-bottom:8px;
+}
+
+.nav-btn:hover{
+  background:var(--primary-dark);
+  transform:translateX(4px);
+}
+
+.nav-btn i{
+  transition:var(--transition);
+}
+
+.nav-btn.active i{
+  transform:rotate(180deg);
+}
+
+.submenu{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.35s ease;
+}
+
+.submenu a{
+  display:block;
+
+  padding:12px 18px;
+  margin:5px 0;
+
+  text-decoration:none;
+  color:var(--muted);
+
+  border-radius:12px;
+
+  transition:var(--transition);
+  font-size:0.92rem;
+}
+
+.submenu a:hover{
+  background:rgba(255,255,255,0.05);
+  color:white;
+  transform:translateX(6px);
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main{
+  margin-left:320px;
+  width:calc(100% - 320px);
+  padding:45px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+  background:linear-gradient(
+    135deg,
+    rgba(91,141,217,0.15),
+    rgba(0,51,102,0.25)
+  );
+
+  border:1px solid var(--border);
+
+  border-radius:28px;
+  padding:45px;
+
+  box-shadow:var(--shadow);
+
+  position:relative;
+  overflow:hidden;
+
+  margin-bottom:40px;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  border-radius:50%;
+  background:rgba(91,141,217,0.08);
+
+  top:-160px;
+  right:-120px;
+}
+
+.hero h1{
+  font-size:3rem;
+  line-height:1.2;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:800px;
+  line-height:1.8;
+}
+
+.badges{
+  margin-top:25px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.badge{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.1);
+
+  padding:12px 18px;
+  border-radius:999px;
+
+  font-size:0.85rem;
+  font-weight:600;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section{
+  margin-bottom:45px;
+}
+
+.section-title{
+  font-size:2rem;
+  margin-bottom:25px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.section-title i{
+  color:var(--primary);
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.card{
+  background:rgba(23,32,51,0.92);
+
+  border:1px solid var(--border);
+
+  border-radius:22px;
+  padding:28px;
+
+  margin-bottom:25px;
+
+  box-shadow:var(--shadow);
+}
+
+.card h3{
+  margin-bottom:16px;
+  font-size:1.25rem;
+}
+
+.card p{
+  line-height:1.8;
+  color:#d8dee9;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrapper{
+  overflow-x:auto;
+  margin-top:20px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th{
+  background:rgba(91,141,217,0.15);
+  color:white;
+}
+
+th, td{
+  padding:14px;
+  border:1px solid var(--border);
+  text-align:center;
+}
+
+tr:hover{
+  background:rgba(255,255,255,0.03);
+}
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+details{
+  margin-top:20px;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+
+summary{
+  cursor:pointer;
+  background:var(--card-2);
+
+  padding:18px;
+  font-weight:600;
+  transition:var(--transition);
+}
+
+summary:hover{
+  background:#24314a;
+}
+
+.details-content{
+  padding:22px;
+  background:rgba(255,255,255,0.02);
+}
+
+/* =========================================================
+   CODE BLOCK
+========================================================= */
+
+.code{
+  background:#0f172a;
+
+  border:1px solid rgba(255,255,255,0.06);
+
+  padding:18px;
+  border-radius:16px;
+
+  overflow-x:auto;
+
+  margin-top:18px;
+
+  font-family:monospace;
+  color:#93c5fd;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+/* =========================================================
+   REFLECTION
+========================================================= */
+
+.reflection{
+  border-left:4px solid var(--primary);
+  padding-left:20px;
+  margin-top:18px;
+  color:#dce7f5;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer{
+  margin-top:60px;
+  text-align:center;
+  color:var(--muted);
+  padding:30px;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,0.15);
+  border-radius:999px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1100px){
+
+  .sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+  }
+
+  .main{
+    width:100%;
+    margin-left:0;
+  }
+
+  .container{
+    flex-direction:column;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .hero h1{
+    font-size:2rem;
+  }
+
+  .main{
+    padding:20px;
+  }
+
+  .hero{
+    padding:28px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+  <div class="logo">
+    <h1>📚 <span>Portafolio</span><br>Lógica Proposicional</h1>
+
+    <p>
+      Matemáticas Discretas · Universidad Nacional de Loja
+    </p>
+  </div>
+
+  <!-- ===== SECTION 1 ===== -->
+
+  <div class="nav-section">
+
+    <button class="nav-btn active">
+      📖 Resumen Teórico
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="submenu" style="max-height:500px;">
+
+      <a href="#proposicion">¿Qué es una proposición?</a>
+
+      <a href="#tipos">Tipos de proposiciones</a>
+
+      <a href="#conectores">Conectores lógicos</a>
+
+      <a href="#tablas">Tablas de verdad</a>
+
+      <a href="#leyes">Leyes proposicionales</a>
+
+      <a href="#inferencia">Reglas de inferencia</a>
+
+    </div>
+
+  </div>
+
+  <!-- ===== SECTION 2 ===== -->
+
+  <div class="nav-section">
+
+    <button class="nav-btn">
+      📊 Ejercicios
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="submenu">
+
+      <a href="#ej1">Ejercicio 1</a>
+
+      <a href="#ej2">Ejercicio 2</a>
+
+      <a href="#ej3">Ejercicio 3</a>
+
+      <a href="#ej4">Ejercicio 4</a>
+
+      <a href="#ej5">Ejercicio 5</a>
+
+    </div>
+
+  </div>
+
+  <!-- ===== SECTION 3 ===== -->
+
+  <div class="nav-section">
+
+    <button class="nav-btn">
+      🧠 Caso Aplicado
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="submenu">
+
+      <a href="#caso">Sistema de Acceso</a>
+
+    </div>
+
+  </div>
+
+  <!-- ===== SECTION 4 ===== -->
+
+  <div class="nav-section">
+
+    <button class="nav-btn">
+      🔍 Reflexión
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="submenu">
+
+      <a href="#reflexion1">Dificultad</a>
+
+      <a href="#reflexion2">Tema dominado</a>
+
+      <a href="#reflexion3">Aplicación</a>
+
+    </div>
+
+  </div>
+
+</aside>
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="main">
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+  <h1>
+    Portafolio — Unidad 1
+  </h1>
+
+  <p>
+    Este portafolio recopila los contenidos fundamentales
+    trabajados en la unidad de lógica proposicional,
+    incluyendo teoría, ejercicios desarrollados,
+    análisis de casos reales y reflexión personal.
+  </p>
+
+  <div class="badges">
+
+    <div class="badge">
+      📘 Matemáticas Discretas
+    </div>
+
+    <div class="badge">
+      🧠 Lógica Proposicional
+    </div>
+
+    <div class="badge">
+      🎓 Universidad Nacional de Loja
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     PROPOSICION
+===================================================== -->
+
+<section class="section" id="proposicion">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-book"></i>
+    ¿Qué es una Proposición?
+  </h2>
+
+  <div class="card">
+
+    <p>
+      Una proposición es un enunciado declarativo
+      que puede ser verdadero o falso,
+      pero nunca ambos al mismo tiempo.
+    </p>
+
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Enunciado</th>
+            <th>¿Es proposición?</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>2 + 2 = 4</td>
+            <td>✅ Sí</td>
+          </tr>
+
+          <tr>
+            <td>¿Cómo estás?</td>
+            <td>❌ No</td>
+          </tr>
+
+          <tr>
+            <td>Guarda el archivo</td>
+            <td>❌ No</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     CONECTORES
+===================================================== -->
+
+<section class="section" id="conectores">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-link"></i>
+    Conectores Lógicos
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Conjunción</h3>
+      <p>
+        $p \land q$
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Disyunción</h3>
+      <p>
+        $p \lor q$
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Negación</h3>
+      <p>
+        $\neg p$
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Condicional</h3>
+      <p>
+        $p \to q$
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     TABLAS
+===================================================== -->
+
+<section class="section" id="tablas">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-table"></i>
+    Tabla de Verdad
+  </h2>
+
+  <div class="card">
+
+    <h3>
+      Ejemplo — $p \to q$
+    </h3>
+
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>$p \to q$</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+          </tr>
+
+          <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+          </tr>
+
+          <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+          </tr>
+
+          <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     EJERCICIO
+===================================================== -->
+
+<section class="section" id="ej1">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-pen"></i>
+    Ejercicio Resuelto
+  </h2>
+
+  <div class="card">
+
+    <h3>
+      Traducción de lenguaje natural
+    </h3>
+
+    <p>
+      “Si el sistema detecta un error y el usuario
+      está conectado, entonces se envía una alerta.”
+    </p>
+
+    <details>
+
+      <summary>
+        📋 Ver procedimiento
+      </summary>
+
+      <div class="details-content">
+
+        <div class="code">
+
+p = El sistema detecta un error  
+q = El usuario está conectado  
+r = Se envía una alerta
+
+(p ∧ q) → r
+
+        </div>
+
+      </div>
+
+    </details>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     LEYES
+===================================================== -->
+
+<section class="section" id="leyes">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-scale-balanced"></i>
+    Leyes Proposicionales
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>De Morgan</h3>
+
+      <p>
+        $\neg(p \land q) \equiv \neg p \lor \neg q$
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Doble Negación</h3>
+
+      <p>
+        $\neg(\neg p) \equiv p$
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Implicación Material</h3>
+
+      <p>
+        $p \to q \equiv \neg p \lor q$
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     INFERENCIA
+===================================================== -->
+
+<section class="section" id="inferencia">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-brain"></i>
+    Reglas de Inferencia
+  </h2>
+
+  <div class="card">
+
+    <h3>
+      Modus Ponens
+    </h3>
+
+    <div class="code">
+
+p → q  
+p  
+∴ q
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     CASO
+===================================================== -->
+
+<section class="section" id="caso">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-shield-halved"></i>
+    Caso Aplicado
+  </h2>
+
+  <div class="card">
+
+    <h3>
+      Sistema de Control de Acceso
+    </h3>
+
+    <p>
+      Un estudiante puede usar los equipos
+      únicamente si presenta su carnet vigente
+      y tiene horario asignado.
+    </p>
+
+    <div class="code">
+
+(p ∧ q) → r
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     REFLEXIONES
+===================================================== -->
+
+<section class="section" id="reflexion1">
+
+  <h2 class="section-title">
+    <i class="fa-solid fa-lightbulb"></i>
+    Reflexión Personal
+  </h2>
+
+  <div class="card">
+
+    <h3>
+      ¿Qué fue lo más difícil?
+    </h3>
+
+    <div class="reflection">
+
+      Comprender el funcionamiento de las
+      tablas de verdad complejas y la forma
+      correcta de evaluar expresiones lógicas
+      con múltiples conectores.
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+  <p>
+    Universidad Nacional de Loja · Matemáticas Discretas · 2026
+  </p>
+
+</footer>
+
+</main>
 </div>
 
----
+<!-- =====================================================
+     SCRIPT
+===================================================== -->
 
-## 📑 Índice
+<script>
 
-| # | Sección |
-|:---:|:---|
-| [01](#-sección-01--resumen-teórico) | 📖 Resumen Teórico |
-| [02](#-sección-02--ejercicios-resueltos) | 📊 Ejercicios Resueltos |
-| [03](#-sección-03--ejercicio-aplicado) | 🧠 Ejercicio Aplicado |
-| [04](#-sección-04--reflexión-personal) | 🔍 Reflexión Personal |
-| [05](#-sección-05--actividades-ape) | 📁 Actividades APE |
+const buttons = document.querySelectorAll(".nav-btn");
 
----
----
+buttons.forEach(button => {
 
-# 📖 Sección 01 — Resumen Teórico
+  button.addEventListener("click", () => {
 
----
+    const submenu = button.nextElementSibling;
 
-## 1.1 — ¿Qué es una Proposición?
+    button.classList.toggle("active");
 
-Una **proposición** es un enunciado declarativo al que se le puede asignar exactamente un valor de verdad: **Verdadero (V)** o **Falso (F)**. Nunca los dos a la vez. Este principio se llama **ley del tercio excluido**.
+    if(submenu.style.maxHeight){
 
-> **Regla práctica:** Un enunciado es proposición si y solo si puede responderse con "verdadero" o "falso" sin ambigüedad.
+      submenu.style.maxHeight = null;
 
-**✅ Ejemplos que SÍ son proposiciones:**
+    } else {
 
-| Enunciado | Valor |
-|:---|:---:|
-| "El número 7 es primo." | `V` |
-| "Python es un lenguaje compilado." | `F` |
-| "2 + 2 = 5" | `F` |
-| "Todo programa tiene al menos una instrucción." | `V` |
+      submenu.style.maxHeight =
+        submenu.scrollHeight + "px";
 
-**❌ Enunciados que NO son proposiciones:**
+    }
 
-| Enunciado | Razón del rechazo |
-|:---|:---|
-| "¿Cuántos bits tiene un byte?" | Es una pregunta, no afirma nada |
-| "Guarda el archivo." | Es una orden |
-| "Este enunciado es falso." | Paradoja — no tiene valor definido |
-| "Ojalá funcione el código." | Es un deseo, no un hecho verificable |
+  });
 
----
+});
 
-## 1.2 — Tipos de Proposiciones
+</script>
 
-### Proposiciones Simples (Atómicas)
-
-Son unidades indivisibles que no contienen conectores lógicos. Se simbolizan con letras minúsculas: $p$, $q$, $r$, $s$...
-
-```
-p : "El servidor está activo."
-q : "El usuario tiene sesión iniciada."
-r : "La base de datos responde."
-```
-
-### Proposiciones Compuestas (Moleculares)
-
-Se construyen uniendo dos o más proposiciones simples con conectores. Su valor de verdad depende de sus partes y del conector usado.
-
-```
-p ∧ q  :  "El servidor está activo Y el usuario tiene sesión."
-p → r  :  "SI el servidor está activo, ENTONCES la base de datos responde."
-¬p     :  "NO es cierto que el servidor está activo."
-```
-
----
-
-## 1.3 — Conectores Lógicos
-
-| Símbolo | Nombre | Lectura | Falsa cuando... |
-|:---:|:---|:---|:---|
-| $\neg$ | **Negación** | "No es cierto que..." | Nunca — invierte el valor original |
-| $\land$ | **Conjunción** | "... y ..." | Al menos una de las dos es F |
-| $\lor$ | **Disyunción** | "... o ..." | Las dos son F simultáneamente |
-| $\to$ | **Condicional** | "Si... entonces..." | Antecedente es V y consecuente es F |
-| $\leftrightarrow$ | **Bicondicional** | "... si y solo si ..." | Tienen valores de verdad distintos |
-
-**Tabla de verdad — los cinco conectores:**
-
-| $p$ | $q$ | $\neg p$ | $p \land q$ | $p \lor q$ | $p \to q$ | $p \leftrightarrow q$ |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| V | V | F | **V** | V | V | **V** |
-| V | F | F | **F** | V | **F** | **F** |
-| F | V | V | **F** | V | V | **F** |
-| F | F | V | **F** | **F** | V | **V** |
-
-> **💡 Sobre el condicional:** Solo es falso cuando la premisa se cumple pero la conclusión no. Es como una promesa: solo se rompe si se hace y después no se cumple.
-
-> **💡 En código:** `¬p` → `!p` · `p ∧ q` → `p && q` · `p ∨ q` → `p || q`
-
----
-
-## 1.4 — Tablas de Verdad
-
-Método para evaluar una proposición compuesta en **todas las combinaciones posibles** de sus variables.
-
-**Procedimiento:**
-
-```
-Paso 1 → Identificar todas las variables  (p, q, r...)
-Paso 2 → Calcular filas: 2ⁿ  (n = número de variables)
-Paso 3 → Llenar columnas con alternancia binaria
-Paso 4 → Evaluar subexpresiones de adentro hacia afuera
-Paso 5 → Evaluar la expresión completa
-Paso 6 → Clasificar el resultado
-```
-
-**Clasificación:**
-
-| Tipo | Definición | Columna final |
-|:---|:---|:---:|
-| 🟢 **Tautología** | Verdadera para cualquier combinación | Solo `V` |
-| 🔴 **Contradicción** | Falsa para cualquier combinación | Solo `F` |
-| 🟡 **Contingencia** | Depende de los valores asignados | `V` y `F` mezcladas |
-
----
-
-## 1.5 — Leyes Proposicionales
-
-Equivalencias que permiten transformar expresiones sin cambiar su valor de verdad.
-
-| Ley | Equivalencia |
-|:---|:---|
-| **Doble Negación** | $\neg(\neg p) \equiv p$ |
-| **De Morgan — conjunción** | $\neg(p \land q) \equiv \neg p \lor \neg q$ |
-| **De Morgan — disyunción** | $\neg(p \lor q) \equiv \neg p \land \neg q$ |
-| **Conmutativa** | $p \land q \equiv q \land p \;\;;\;\; p \lor q \equiv q \lor p$ |
-| **Asociativa** | $(p \land q) \land r \equiv p \land (q \land r)$ |
-| **Distributiva** | $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$ |
-| **Idempotencia** | $p \land p \equiv p \;\;;\;\; p \lor p \equiv p$ |
-| **Absorción** | $p \land (p \lor q) \equiv p$ |
-| **Implicación Material** | $p \to q \equiv \neg p \lor q$ |
-| **Exportación** | $(p \land q) \to r \equiv p \to (q \to r)$ |
-| **Identidad** | $p \land V \equiv p \;\;;\;\; p \lor F \equiv p$ |
-| **Complemento** | $p \land \neg p \equiv F \;\;;\;\; p \lor \neg p \equiv V$ |
-
-> **💡 En código:** `!(A && B)` es idéntico a `!A || !B` — eso es De Morgan aplicado directamente.
-
----
-
-## 1.6 — Reglas de Inferencia
-
-Esquemas que garantizan conclusiones válidas a partir de premisas verdaderas. Si las premisas se cumplen, la conclusión es inevitable.
-
----
-
-**Modus Ponendo Ponens `(MPP)`**
-
-$$\frac{p \to q \;\;,\;\; p}{\therefore\; q}$$
-
-| | |
-|:---|:---|
-| $p \to q$ | "Si el código compila, el programa ejecuta." |
-| $p$ | "El código compila." |
-| $\therefore\; q$ | **∴ El programa ejecuta.** |
-
----
-
-**Modus Tollendo Tollens `(MTT)`**
-
-$$\frac{p \to q \;\;,\;\; \neg q}{\therefore\; \neg p}$$
-
-| | |
-|:---|:---|
-| $p \to q$ | "Si hay conexión, la página carga." |
-| $\neg q$ | "La página no carga." |
-| $\therefore\; \neg p$ | **∴ No hay conexión.** |
-
----
-
-**Silogismo Hipotético `(SH)`**
-
-$$\frac{p \to q \;\;,\;\; q \to r}{\therefore\; p \to r}$$
-
-| | |
-|:---|:---|
-| $p \to q$ | "Si el usuario es admin, puede modificar archivos." |
-| $q \to r$ | "Si puede modificar, puede borrarlos." |
-| $\therefore\; p \to r$ | **∴ Si es admin, puede borrar archivos.** |
-
----
-
-**Silogismo Disyuntivo `(SD)`**
-
-$$\frac{p \lor q \;\;,\;\; \neg p}{\therefore\; q}$$
-
----
-
-**Adición y Simplificación:**
-
-$$\text{Adición: } \frac{p}{\therefore\; p \lor q} \qquad\qquad \text{Simplificación: } \frac{p \land q}{\therefore\; p}$$
-
----
----
-
-# 📊 Sección 02 — Ejercicios Resueltos
-
-> 📂 Evidencias en la carpeta [`./Evidencias/`](./Evidencias/)
-
----
-
-## Ejercicio 1 — Traducción de lenguaje natural a simbólico
-
-**Objetivo:** Convertir enunciados cotidianos a fórmulas lógicas formales.
-
-<details>
-<summary><b>📋 Ver procedimiento completo</b></summary>
-
-<br/>
-
-**Enunciado:**
-> _"Si el sistema detecta un error y el usuario está conectado, entonces se envía una alerta. Si el sistema no detecta ningún error, no se envía alerta."_
-
-**Paso 1 — Proposiciones simples:**
-
-| Variable | Proposición |
-|:---:|:---|
-| $p$ | El sistema detecta un error. |
-| $q$ | El usuario está conectado. |
-| $r$ | Se envía una alerta. |
-
-**Paso 2 — Conectores implícitos:**
-
-| Fragmento | Conector | Símbolo |
-|:---|:---:|:---:|
-| "...y el usuario está conectado..." | Conjunción | $\land$ |
-| "Si... entonces..." | Condicional | $\to$ |
-| "Si no... no..." | Condicional con negación | $\neg\;\to\;\neg$ |
-
-**Paso 3 — Traducción simbólica:**
-
-Primera oración: $(p \land q) \to r$
-
-Segunda oración: $\neg p \to \neg r$
-
-Expresión completa: $[(p \land q) \to r] \land [\neg p \to \neg r]$
-
-</details>
-
-> 📄 [Ver resolución en PDF](./Evidencias/Ejercicio_01.pdf)
-
----
-
-## Ejercicio 2 — Construcción de tabla de verdad
-
-**Objetivo:** Construir la tabla de verdad completa con todas las columnas intermedias.
-
-<details>
-<summary><b>📋 Ver procedimiento completo</b></summary>
-
-<br/>
-
-**Expresión a analizar:** $(p \to q) \land (\neg p \lor r)$
-
-**Paso 1:** Variables: $p$, $q$, $r$ → $2^3 = 8$ filas
-
-**Paso 2 — Tabla completa:**
-
-| $p$ | $q$ | $r$ | $\neg p$ | $p \to q$ | $\neg p \lor r$ | **Resultado** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| V | V | V | F | V | V | **V** |
-| V | V | F | F | V | F | **F** |
-| V | F | V | F | F | V | **F** |
-| V | F | F | F | F | F | **F** |
-| F | V | V | V | V | V | **V** |
-| F | V | F | V | V | V | **V** |
-| F | F | V | V | V | V | **V** |
-| F | F | F | V | V | V | **V** |
-
-**Paso 3 — Clasificación:** La columna final contiene V y F → 🟡 **Contingencia**
-
-</details>
-
-> 📄 [Ver resolución en PDF](./Evidencias/Ejercicio_02.pdf)
-
----
-
-## Ejercicio 3 — Clasificación: tautología, contradicción o contingencia
-
-**Objetivo:** Determinar el tipo lógico de tres expresiones distintas.
-
-<details>
-<summary><b>📋 Ver procedimiento completo</b></summary>
-
-<br/>
-
-**Expresión A — $p \lor \neg p$**
-
-| $p$ | $\neg p$ | $p \lor \neg p$ |
-|:---:|:---:|:---:|
-| V | F | **V** |
-| F | V | **V** |
-
-→ 🟢 **Tautología** _(Ley del Complemento)_
-
----
-
-**Expresión B — $p \land \neg p$**
-
-| $p$ | $\neg p$ | $p \land \neg p$ |
-|:---:|:---:|:---:|
-| V | F | **F** |
-| F | V | **F** |
-
-→ 🔴 **Contradicción**
-
----
-
-**Expresión C — $(p \to q) \leftrightarrow (\neg p \lor q)$**
-
-| $p$ | $q$ | $p \to q$ | $\neg p \lor q$ | **Resultado** |
-|:---:|:---:|:---:|:---:|:---:|
-| V | V | V | V | **V** |
-| V | F | F | F | **V** |
-| F | V | V | V | **V** |
-| F | F | V | V | **V** |
-
-→ 🟢 **Tautología** _(confirma la Ley de Implicación Material)_
-
-</details>
-
-> 📄 [Ver resolución en PDF](./Evidencias/Ejercicio_03.pdf)
-
----
-
-## Ejercicio 4 — Aplicación de leyes proposicionales
-
-**Objetivo:** Simplificar una expresión paso a paso citando cada ley aplicada.
-
-<details>
-<summary><b>📋 Ver procedimiento completo</b></summary>
-
-<br/>
-
-**Expresión a simplificar:** $\neg(\neg p \land q) \lor (p \land \neg q)$
-
-| Paso | Expresión | Ley aplicada |
-|:---:|:---|:---|
-| 0 | $\neg(\neg p \land q) \lor (p \land \neg q)$ | Expresión original |
-| 1 | $(\neg\neg p \lor \neg q) \lor (p \land \neg q)$ | De Morgan |
-| 2 | $(p \lor \neg q) \lor (p \land \neg q)$ | Doble Negación |
-| 3 | $p \lor [\neg q \lor (p \land \neg q)]$ | Asociativa |
-| 4 | $p \lor \neg q$ | Absorción |
-
-**Resultado:** $\neg(\neg p \land q) \lor (p \land \neg q) \;\equiv\; p \lor \neg q$
-
-</details>
-
-> 📄 [Ver resolución en PDF](./Evidencias/Ejercicio_04.pdf)
-
----
-
-## Ejercicio 5 — Validación de un argumento lógico
-
-**Objetivo:** Determinar si un argumento es válido usando reglas de inferencia.
-
-<details>
-<summary><b>📋 Ver procedimiento completo</b></summary>
-
-<br/>
-
-**Argumento:**
-> _"Si hay error en el servidor, el sistema falla. Si el sistema falla, se pierde la sesión. Hay error en el servidor. Por lo tanto, se pierde la sesión."_
-
-**Proposiciones:**
-
-| Variable | Proposición |
-|:---:|:---|
-| $p$ | Hay error en el servidor. |
-| $q$ | El sistema falla. |
-| $r$ | Se pierde la sesión del usuario. |
-
-**Premisas:** $P_1: p \to q \quad P_2: q \to r \quad P_3: p$ · **Conclusión:** $\therefore\; r$
-
-**Derivación:**
-
-| Paso | Expresión | Justificación |
-|:---:|:---|:---|
-| 1 | $p \to q$ | Premisa $P_1$ |
-| 2 | $q \to r$ | Premisa $P_2$ |
-| 3 | $p \to r$ | Silogismo Hipotético (pasos 1 y 2) |
-| 4 | $p$ | Premisa $P_3$ |
-| 5 | $\therefore\; r$ | Modus Ponens (pasos 3 y 4) |
-
-**Argumento: VÁLIDO ✅**
-
-</details>
-
-> 📄 [Ver resolución en PDF](./Evidencias/Ejercicio_05.pdf)
-
----
----
-
-# 🧠 Sección 03 — Ejercicio Aplicado
-
-## Caso: Sistema de Control de Acceso — Laboratorio de Cómputo
-
-**Situación:**
-
-> _"Un estudiante puede usar los equipos únicamente si presenta su carnet vigente y tiene horario asignado. Si accede sin autorización, el sistema genera un reporte y notifica al docente responsable."_
-
----
-
-### Paso 1 — Definición de proposiciones
-
-| Variable | Proposición |
-|:---:|:---|
-| $p$ | El estudiante presenta carnet universitario vigente. |
-| $q$ | El estudiante tiene horario asignado. |
-| $r$ | El estudiante puede usar los equipos. |
-| $s$ | El sistema genera un reporte automático. |
-| $t$ | El docente responsable es notificado. |
-
----
-
-### Paso 2 — Modelo simbólico
-
-Regla de acceso: $(p \land q) \to r$
-
-Regla de infracción: $\neg(p \land q) \land r \;\to\; (s \land t)$
-
----
-
-### Paso 3 — Tabla de verdad: regla de acceso
-
-| $p$ | $q$ | $p \land q$ | Acceso | $(p \land q) \to r$ |
-|:---:|:---:|:---:|:---:|:---:|
-| V | V | V | ✅ Permitido | V |
-| V | F | F | ⛔ Denegado | V |
-| F | V | F | ⛔ Denegado | V |
-| F | F | F | ⛔ Denegado | V |
-
-Columna final siempre `V` → la regla es una **tautología**. El modelo es correcto.
-
----
-
-### Paso 4 — Análisis de infracción con De Morgan
-
-Cuando $r = V$ pero $p \land q = F$:
-
-$$\neg(p \land q) \equiv \neg p \lor \neg q$$
-
-| Escenario | Condición | Respuesta |
-|:---|:---|:---:|
-| Sin carnet, con horario | $\neg p \land q \land r$ | $s \land t$ ✓ |
-| Con carnet, sin horario | $p \land \neg q \land r$ | $s \land t$ ✓ |
-| Sin carnet ni horario | $\neg p \land \neg q \land r$ | $s \land t$ ✓ |
-
----
-
-### Paso 5 — Derivación por inferencia
-
-**Premisas:** $P_1: (p \land q) \to r \quad P_2: \neg p \quad P_3: r$
-
-| Paso | Expresión | Justificación |
-|:---:|:---|:---|
-| 1 | $\neg p$ | Premisa $P_2$ |
-| 2 | $\neg p \lor \neg q$ | Adición |
-| 3 | $\neg(p \land q)$ | De Morgan |
-| 4 | $\neg(p \land q) \land r$ | Conjunción con $P_3$ |
-| 5 | $\therefore\; s \land t$ | Modus Ponens con Regla de infracción |
-
----
-
-### Conclusión
-
-El sistema es **consistente**: no existe combinación de entradas que permita acceso no autorizado sin activar la respuesta de seguridad. Este tipo de verificación formal es la base del diseño de políticas de control de acceso en ciberseguridad.
-
----
----
-
-# 🔍 Sección 04 — Reflexión Personal
-
-## ❓ ¿Qué fue lo más difícil de entender?
-
-<!--
-▼ ESCRIBE AQUÍ TU REFLEXIÓN ▼
-¿Qué concepto tardaste más en comprender? ¿Por qué te costó?
-¿Qué estrategia usaste para superarlo?
--->
-
-> _[ Escribe tu reflexión aquí ]_
-
----
-
-## ✅ ¿Qué tema comprendí mejor?
-
-<!--
-▼ ESCRIBE AQUÍ TU REFLEXIÓN ▼
-¿Qué tema te resultó más intuitivo o satisfactorio?
-¿Por qué crees que lo entendiste con facilidad?
--->
-
-> _[ Escribe tu reflexión aquí ]_
-
----
-
-## 🚀 ¿Cómo puedo aplicar la lógica en mi carrera?
-
-<!--
-▼ ESCRIBE AQUÍ TU REFLEXIÓN ▼
-Menciona al menos dos áreas concretas de la ingeniería.
-Sé específico: no solo "en programación", sino en qué parte exacta.
--->
-
-> _[ Escribe tu reflexión aquí ]_
-
----
----
-
-# 📁 Sección 05 — Actividades APE
-
-> 📂 Archivos en `Evidencias/APES/`
-
-| # | Actividad | Descripción | Archivo |
-|:---:|:---|:---|:---:|
-| `APE 01` | **Lógica** | Identificación y clasificación de proposiciones | [📄 Ver](./Evidencias/APES/APE_1_FASE_1.pdf) |
-| `APE 02` | **Tablas de Verdad** | Construcción con conectores compuestos | [📄 Ver](./Evidencias/APES/APE_1_FASE_2.pdf) |
-| `APE 03` | **Leyes Lógicas** | Aplicación y demostración de equivalencias | [📄 Ver](./Evidencias/APES/APE_1_FASE_3.pdf) |
-| `APE 04` | **Compuertas Lógicas** | Relación entre lógica y hardware digital | [📄 Ver](./Evidencias/APES/APE_1_FASE_4.pdf) |
-| `APE 05` | **Reglas de Inferencia** | Validación de argumentos formales | [📄 Ver](./Evidencias/APES/APE_1_FASE_5.pdf) |
-| `APE 06` | **Proyecto Integrador** | Aplicación integral de todos los contenidos | [📄 Ver](./Evidencias/APES/APE_1_FASE_6.pdf) |
-
----
-
-<div align="center">
-
-![](https://img.shields.io/badge/─────────────────────────────────────────-003366?style=flat-square&labelColor=003366&color=003366)
-
-<sub>[ TU NOMBRE ] · Matemáticas Discretas · Universidad Nacional de Loja · 2026</sub>
-
-</div>
-
+</body>
+</html>
