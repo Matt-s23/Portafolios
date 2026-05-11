@@ -11,9 +11,11 @@
 
 ---
 
-### 👨‍🎓 Estudiante: TU NOMBRE
-### 👨‍🏫 Docente: NOMBRE DEL DOCENTE
-### 📅 Año: 2026
+### Estudiante: Matias Santiago Calva Gonzalez 
+### Ing : Mario Enrique Cueva 
+### Carrera: Computacion 
+### Ciclo: Primer ciclo 
+### Año: 2026
 
 </div>
 
