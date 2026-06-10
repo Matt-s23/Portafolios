@@ -49,7 +49,8 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del condicional simple.
+
+<img width="559" height="774" alt="image" src="https://github.com/user-attachments/assets/9adef7ee-15b8-406d-b865-d3821d61c62d" />
 
 ---
 
@@ -91,7 +92,7 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del condicional doble.
+<img width="697" height="802" alt="image" src="https://github.com/user-attachments/assets/90dbe08b-b973-46ea-b6af-6af3bf391333" />
 
 ---
 
@@ -145,7 +146,7 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del condicional múltiple.
+<img width="604" height="778" alt="image" src="https://github.com/user-attachments/assets/51f7d387-2d49-4d1a-b490-d6e27898c632" />
 
 ---
 
@@ -201,7 +202,7 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del ciclo while.
+<img width="506" height="849" alt="image" src="https://github.com/user-attachments/assets/03026e19-a6a7-4295-aee3-85754532aed9" />
 
 ---
 
@@ -238,7 +239,7 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del ciclo do while.
+<img width="616" height="824" alt="image" src="https://github.com/user-attachments/assets/a04d6744-9c25-4494-9842-5be6f00959ca" />
 
 ---
 
@@ -274,7 +275,7 @@ FIN
 
 ### Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo del ciclo for.
+<img width="397" height="782" alt="image" src="https://github.com/user-attachments/assets/28a419cc-706c-4412-a0cd-d0741b587a45" />
 
 ---
 
@@ -342,7 +343,7 @@ FIN
 
 ## 3.4 Diagrama de Flujo
 
-> Espacio reservado para insertar el diagrama de flujo completo del ejercicio.
+<img width="299" height="830" alt="image" src="https://github.com/user-attachments/assets/45928547-676b-45ed-8273-ca0814af8a88" />
 
 ---
 
