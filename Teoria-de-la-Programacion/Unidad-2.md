@@ -393,7 +393,8 @@ Las pruebas de escritorio facilitaron detectar errores antes de ejecutar el cód
 
 | Navegación |
 |---|
-| [📘 Unidad 1](Unidad%201.md) |
-| [📘 Unidad 3](Unidad%203.md) |
+
+[📘 Unidad 1](Unidad-1.md)
+[📘 Unidad 3](Unidad-3.md)
 
 ---
