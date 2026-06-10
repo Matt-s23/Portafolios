@@ -140,6 +140,13 @@ En conclusión, la aplicación de algoritmos y el uso de herramientas como PSeIn
 
 <div align="center">
 
----
+# 🔗 Navegación
 
 [⬅ Volver a la Portada](Portada.md)
+
+| Navegación |
+|---|
+| [📘 Unidad 2](Unidad%202.md) |
+| [📘 Unidad 3](Unidad%203.md) |
+
+---
