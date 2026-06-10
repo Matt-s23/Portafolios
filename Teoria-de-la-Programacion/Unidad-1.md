@@ -146,7 +146,8 @@ En conclusión, la aplicación de algoritmos y el uso de herramientas como PSeIn
 
 | Navegación |
 |---|
-| [📘 Unidad 2](Unidad%202.md) |
-| [📘 Unidad 3](Unidad%203.md) |
+
+[📘 Unidad 2](Unidad-2.md)
+[📘 Unidad 3](Unidad-3.md)
 
 ---
