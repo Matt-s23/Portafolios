@@ -1,49 +1,37 @@
 # UNIDAD 2
-## Estructuras Condicionales y Repetitivas
+# ESTRUCTURAS CONDICIONALES Y REPETITIVAS
 
 ---
 
-# Tabla de Contenidos
+# 1. Estructuras Condicionales
 
-1. Introducción
-2. Estructuras Condicionales
-   - 2.1 Condicional Simple (if)
-   - 2.2 Condicional Doble (if - else)
-   - 2.3 Condicional Múltiple (if - else if)
-3. Estructuras Repetitivas
-   - 3.1 Ciclo while
-   - 3.2 Ciclo do while
-   - 3.3 Ciclo for
-4. Ejercicio Integrador
-   - 4.1 Planteamiento del Problema
-   - 4.2 Análisis del Problema
-   - 4.3 Diseño del Algoritmo
-   - 4.4 Diagrama de Flujo
-   - 4.5 Codificación
-   - 4.6 Validación
-5. Principales Dificultades y Reflexión Crítica
-6. Conclusión
-7. Navegación
+Las estructuras condicionales permiten controlar el flujo de ejecución de un programa mediante la evaluación de condiciones lógicas. Gracias a ellas, un algoritmo puede tomar decisiones y ejecutar diferentes acciones dependiendo de si una condición es verdadera o falsa.
+
+Estas estructuras son fundamentales en la programación porque permiten adaptar el comportamiento de un sistema a distintas situaciones. Sin ellas, todos los programas ejecutarían siempre las mismas instrucciones sin importar los datos ingresados por el usuario.
+
+## Características de las Estructuras Condicionales
+
+- Permiten la toma de decisiones dentro de un programa.
+- Evalúan expresiones lógicas.
+- Controlan el flujo de ejecución.
+- Facilitan la resolución de problemas complejos.
+- Mejoran la flexibilidad y eficiencia de los algoritmos.
 
 ---
 
-# 1. Introducción
+## 1.1 Condicional Simple (if)
 
-Las estructuras de control constituyen uno de los elementos fundamentales dentro de la programación, ya que permiten dirigir el flujo de ejecución de un algoritmo según determinadas condiciones o necesidades del problema planteado. Sin estas estructuras, los programas ejecutarían sus instrucciones de forma secuencial, limitando significativamente su capacidad para resolver situaciones complejas.
+La estructura condicional simple se utiliza cuando una acción debe ejecutarse únicamente si una condición determinada es verdadera. Si la condición resulta falsa, el programa continúa normalmente con las instrucciones siguientes.
 
-Dentro de las estructuras de control se encuentran las estructuras condicionales y las estructuras repetitivas. Las primeras permiten que un programa tome decisiones mediante la evaluación de expresiones lógicas, mientras que las segundas posibilitan la ejecución repetida de un conjunto de instrucciones. El estudio de estos conceptos resulta indispensable para el desarrollo de algoritmos eficientes y para la comprensión de cualquier lenguaje de programación moderno.
+### Sintaxis General
 
----
+```txt
+SI condición ENTONCES
 
-# 2. Estructuras Condicionales
+    instrucciones
 
-Las estructuras condicionales permiten que un programa tome decisiones dependiendo de si una condición es verdadera o falsa. Estas estructuras son fundamentales porque permiten controlar el flujo de ejecución de un algoritmo y adaptar el comportamiento del programa según diferentes situaciones.
-
----
-
-## 2.1 Condicional Simple (if)
-
-La estructura `if` ejecuta un bloque de instrucciones únicamente cuando la condición establecida es verdadera.
+FIN_SI
+```
 
 ### Pseudocódigo
 
@@ -65,9 +53,25 @@ FIN
 
 ---
 
-## 2.2 Condicional Doble (if - else)
+## 1.2 Condicional Doble (if - else)
 
-La estructura `if - else` permite ejecutar una acción cuando la condición es verdadera y otra diferente cuando la condición es falsa.
+La estructura condicional doble permite ejecutar una acción cuando la condición es verdadera y otra diferente cuando la condición es falsa.
+
+Este tipo de estructura resulta útil cuando solamente existen dos posibles resultados dentro de un problema.
+
+### Sintaxis General
+
+```txt
+SI condición ENTONCES
+
+    instrucciones
+
+SINO
+
+    instrucciones
+
+FIN_SI
+```
 
 ### Pseudocódigo
 
@@ -91,9 +95,29 @@ FIN
 
 ---
 
-## 2.3 Condicional Múltiple (if - else if)
+## 1.3 Condicional Múltiple (if - else if)
 
-Esta estructura se utiliza cuando existen varias condiciones posibles dentro de un mismo problema.
+La estructura condicional múltiple permite evaluar varias condiciones dentro de un mismo bloque de decisión.
+
+Su principal ventaja es que evita el uso excesivo de múltiples estructuras independientes, facilitando la organización y comprensión del algoritmo.
+
+### Sintaxis General
+
+```txt
+SI condición1 ENTONCES
+
+    instrucciones
+
+SINO SI condición2 ENTONCES
+
+    instrucciones
+
+SINO
+
+    instrucciones
+
+FIN_SI
+```
 
 ### Pseudocódigo
 
@@ -125,15 +149,37 @@ FIN
 
 ---
 
-# 3. Estructuras Repetitivas
+# 2. Estructuras Repetitivas
 
-Las estructuras repetitivas permiten ejecutar un conjunto de instrucciones varias veces mientras se cumpla una condición determinada. Su utilización evita la repetición innecesaria de código y facilita la automatización de procesos.
+Las estructuras repetitivas, también conocidas como bucles o ciclos, permiten ejecutar un conjunto de instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
+
+Su utilización optimiza el desarrollo de programas, mejora la organización del código y facilita la automatización de tareas repetitivas.
+
+## Características de las Estructuras Repetitivas
+
+- Reducen la cantidad de código.
+- Facilitan el mantenimiento de programas.
+- Automatizan procesos repetitivos.
+- Mejoran la eficiencia de los algoritmos.
+- Permiten trabajar con grandes volúmenes de información.
 
 ---
 
-## 3.1 Ciclo while
+## 2.1 Ciclo while
 
-El ciclo `while` evalúa primero la condición y posteriormente ejecuta las instrucciones mientras dicha condición sea verdadera.
+El ciclo `while` evalúa primero una condición lógica y ejecuta las instrucciones únicamente mientras dicha condición sea verdadera.
+
+Su principal característica es que puede ejecutarse cero veces si la condición inicial resulta falsa.
+
+### Sintaxis General
+
+```txt
+MIENTRAS condición HACER
+
+    instrucciones
+
+FIN_MIENTRAS
+```
 
 ### Pseudocódigo
 
@@ -159,9 +205,21 @@ FIN
 
 ---
 
-## 3.2 Ciclo do while
+## 2.2 Ciclo do while
 
-La estructura `do while` ejecuta primero el bloque de instrucciones y posteriormente evalúa la condición, garantizando al menos una ejecución.
+La estructura `do while` ejecuta primero el bloque de instrucciones y posteriormente evalúa la condición.
+
+Por esta razón garantiza al menos una ejecución.
+
+### Sintaxis General
+
+```txt
+HACER
+
+    instrucciones
+
+MIENTRAS condición
+```
 
 ### Pseudocódigo
 
@@ -184,9 +242,21 @@ FIN
 
 ---
 
-## 3.3 Ciclo for
+## 2.3 Ciclo for
 
-La estructura `for` se utiliza cuando se conoce previamente la cantidad de veces que se repetirá una instrucción.
+El ciclo `for` se utiliza cuando se conoce previamente el número de repeticiones que debe realizar el programa.
+
+Es una de las estructuras repetitivas más utilizadas debido a que integra en una sola línea la inicialización, condición e incremento.
+
+### Sintaxis General
+
+```txt
+PARA variable ← inicio HASTA fin HACER
+
+    instrucciones
+
+FIN_PARA
+```
 
 ### Pseudocódigo
 
@@ -208,24 +278,24 @@ FIN
 
 ---
 
-# 4. Ejercicio Integrador
+# 3. Ejercicio Integrador
 
-## 4.1 Planteamiento del Problema
+## 3.1 Planteamiento del Problema
 
 Desarrollar un programa que solicite cinco notas de un estudiante, calcule el promedio general y determine si el estudiante aprueba o reprueba la asignatura.
 
 ---
 
-## 4.2 Análisis del Problema
+## 3.2 Análisis del Problema
 
 ### Entradas
 
-- Cinco calificaciones.
+- Cinco calificaciones ingresadas por el usuario.
 
 ### Procesos
 
-- Leer las notas.
-- Sumar las calificaciones.
+- Leer las cinco notas.
+- Acumular las calificaciones.
 - Calcular el promedio.
 - Evaluar la condición de aprobación.
 
@@ -236,7 +306,7 @@ Desarrollar un programa que solicite cinco notas de un estudiante, calcule el pr
 
 ---
 
-## 4.3 Diseño del Algoritmo
+## 3.3 Diseño del Algoritmo
 
 ### Pseudocódigo
 
@@ -248,6 +318,7 @@ INICIO
     PARA i ← 1 HASTA 5 HACER
 
         LEER nota
+
         suma ← suma + nota
 
     FIN_PARA
@@ -255,9 +326,13 @@ INICIO
     promedio ← suma / 5
 
     SI promedio >= 6 ENTONCES
+
         ESCRIBIR "APROBADO"
+
     SINO
+
         ESCRIBIR "REPROBADO"
+
     FIN_SI
 
 FIN
@@ -265,13 +340,13 @@ FIN
 
 ---
 
-## 4.4 Diagrama de Flujo
+## 3.4 Diagrama de Flujo
 
 > Espacio reservado para insertar el diagrama de flujo completo del ejercicio.
 
 ---
 
-## 4.5 Codificación
+## 3.5 Codificación
 
 ```c
 #include <stdio.h>
@@ -286,20 +361,20 @@ int main() {
         printf("Ingrese la nota %d: ", i);
         scanf("%f", &nota);
 
-        suma = suma + nota;
+        suma += nota;
     }
 
     promedio = suma / 5;
 
-    printf("\nPromedio: %.2f\n", promedio);
+    printf("\nPromedio final: %.2f\n", promedio);
 
     if(promedio >= 6) {
 
-        printf("Estado: APROBADO");
+        printf("Estado: APROBADO\n");
 
     } else {
 
-        printf("Estado: REPROBADO");
+        printf("Estado: REPROBADO\n");
     }
 
     return 0;
@@ -308,11 +383,11 @@ int main() {
 
 ---
 
-## 4.6 Validación
+## 3.6 Validación
 
 ### Caso 1
 
-**Datos de entrada**
+**Datos de Entrada**
 
 - 8
 - 9
@@ -320,16 +395,16 @@ int main() {
 - 10
 - 8
 
-**Resultado**
+**Resultado Esperado**
 
 ```txt
-Promedio: 8.40
+Promedio final: 8.40
 Estado: APROBADO
 ```
 
 ### Caso 2
 
-**Datos de entrada**
+**Datos de Entrada**
 
 - 4
 - 5
@@ -337,40 +412,36 @@ Estado: APROBADO
 - 6
 - 4
 
-**Resultado**
+**Resultado Esperado**
 
 ```txt
-Promedio: 4.40
+Promedio final: 4.40
 Estado: REPROBADO
 ```
 
 ---
 
-# 5. Principales Dificultades y Reflexión Crítica
+# 4. Principales Dificultades y Reflexión Crítica
 
 ## Reflexión
 
-El desarrollo de esta unidad me permitió comprender que la programación no consiste únicamente en escribir código, sino en aprender a resolver problemas mediante un razonamiento lógico y estructurado.
+El desarrollo de esta unidad me permitió comprender que la programación no consiste únicamente en escribir código, sino en aprender a resolver problemas mediante un razonamiento lógico y estructurado. Durante el estudio de las estructuras condicionales y repetitivas entendí cómo un programa puede tomar decisiones y repetir procesos automáticamente dependiendo de ciertas condiciones establecidas.
 
-Durante el estudio de las estructuras condicionales y repetitivas entendí cómo un programa puede tomar decisiones y repetir procesos automáticamente dependiendo de ciertas condiciones establecidas.
+Una de las mayores dificultades que tuve fue comprender el funcionamiento de los ciclos `for` y `while`, ya que al inicio resultaban confusos debido a la manera en que controlan las repeticiones dentro de un programa. En algunos ejercicios se me dificultaba identificar cuándo debía utilizar cada estructura y cómo funcionaban las variables contadoras y acumuladoras dentro del ciclo. También tuve problemas al elaborar diagramas de flujo relacionados con estructuras repetitivas, porque era necesario organizar correctamente la secuencia lógica del proceso para evitar errores.
 
-Una de las mayores dificultades que tuve fue comprender el funcionamiento de los ciclos `for` y `while`, ya que inicialmente resultaban confusos debido a la manera en que controlan las repeticiones dentro de un programa. También experimenté dificultades al elaborar diagramas de flujo relacionados con estructuras repetitivas, ya que era necesario organizar correctamente la secuencia lógica del proceso para evitar errores.
-
-Sin embargo, mediante la práctica constante, las pruebas de escritorio y la corrección de errores, logré comprender mejor el comportamiento de estas estructuras y su importancia dentro del desarrollo de software.
+Sin embargo, mediante la práctica constante, las pruebas de escritorio y la corrección de errores en los programas, logré entender mejor el comportamiento de las estructuras repetitivas y su importancia dentro de la programación. Poco a poco fui desarrollando una mejor capacidad de análisis para identificar errores lógicos y mejorar la organización de los algoritmos.
 
 ---
 
-# 6. Conclusión
+# 5. Conclusión
 
-Las estructuras condicionales y repetitivas representan una base fundamental en la programación, ya que permiten controlar el flujo de ejecución de un programa y automatizar tareas de manera eficiente.
+En conclusión, esta unidad fortaleció significativamente mi comprensión sobre las estructuras condicionales y repetitivas, las cuales representan una base fundamental en el desarrollo de programas. Aprendí que las estructuras condicionales permiten que un sistema tome decisiones dependiendo de determinadas situaciones, mientras que las estructuras repetitivas ayudan a automatizar tareas que deben ejecutarse varias veces.
 
-Además, el uso de pseudocódigo, diagramas de flujo y lenguaje C permitió relacionar la teoría con la práctica, fortaleciendo el pensamiento lógico-computacional y la capacidad para resolver problemas mediante algoritmos.
-
-Los conocimientos adquiridos en esta unidad servirán como base para abordar temas más avanzados de programación y desarrollo de software.
+Además, comprendí la importancia de realizar pruebas de escritorio antes de ejecutar un programa, ya que este proceso facilita la detección de errores y mejora la lógica del algoritmo. El uso de pseudocódigo, diagramas de flujo y lenguaje C permitió relacionar la teoría con la práctica, fortaleciendo mi pensamiento lógico-computacional y mi capacidad para resolver problemas mediante programación.
 
 ---
 
-# 7. Navegación
+# 6. Navegación
 
 [Volver a la Portada](Portada.md)
 
