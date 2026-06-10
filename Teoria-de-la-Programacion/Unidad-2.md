@@ -415,11 +415,7 @@ Además, comprendí la importancia de realizar pruebas de escritorio antes de ej
 
 ---
 
-# 6. Declaración de Uso de Inteligencia Artificial
-
-Durante la elaboración de este trabajo utilicé herramientas de inteligencia artificial como apoyo para mejorar la redacción, organizar algunas secciones y aclarar conceptos relacionados con los temas estudiados. No obstante, la comprensión de los contenidos, el desarrollo de las actividades y las conclusiones presentadas son resultado de mi propio proceso de aprendizaje y revisión.
-
-# 7. Navegación
+# 6. Navegación
 
 [Volver a la Portada](Portada.md)
 
