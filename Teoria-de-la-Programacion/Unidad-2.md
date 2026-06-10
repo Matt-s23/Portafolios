@@ -392,9 +392,7 @@ int main() {
 
 <img width="1196" height="739" alt="image" src="https://github.com/user-attachments/assets/768a8f18-99cd-4541-90c4-f170e6e7ea11" />
 
-```
-
-# 4. Principales Dificultades y Reflexión Crítica
+4. Principales Dificultades y Reflexión Crítica
 
 ## Reflexión
 
