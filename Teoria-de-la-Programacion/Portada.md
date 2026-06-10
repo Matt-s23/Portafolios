@@ -37,8 +37,10 @@
 
 - [📄 Portada](Portada.md)
 - [📚 Bibliografía](Bibliografia.md)
-- [📝 Conclusiones Generales](Conclusiones-Generales.md)
-- [🤖 Declaración de uso de IA generativa](Declaracion-IA.md)
+
+## 🤖 Declaración de uso de IA generativa
+
+Se utilizó inteligencia artificial como herramienta de apoyo para mejorar la redacción, corregir errores ortográficos y gramaticales, y contribuir en la elaboración general del código. Además, permitió optimizar la organización y claridad del trabajo, facilitando la identificación de posibles errores y la aplicación de buenas prácticas de programación. Todas las sugerencias proporcionadas fueron revisadas y adaptadas según las necesidades del proyecto, con el objetivo de obtener un resultado final más limpio, ordenado y profesional.
 
 ---
 
@@ -53,12 +55,6 @@
 | Unidad 3 | [Entrar](Unidad-3.md) |
 
 </div>
-
----
-
-# ✅ Observaciones
-
-Este portafolio contiene el desarrollo de actividades, ejercicios, diagramas de flujo, pseudocódigos y reflexiones realizadas durante el aprendizaje de la asignatura de **Teoría de la Programación**.
 
 ---
 
