@@ -400,7 +400,7 @@ int main() {
 <img width="1196" height="739" alt="image" src="https://github.com/user-attachments/assets/768a8f18-99cd-4541-90c4-f170e6e7ea11" />
 
 
-## Reflexión
+## 4. Reflexión
 
 El desarrollo de esta unidad me permitió comprender que la programación va más allá de escribir código, ya que requiere aplicar un razonamiento lógico para resolver problemas de manera organizada. Durante el aprendizaje de las estructuras condicionales y repetitivas, tuve algunas dificultades para entender el funcionamiento de los ciclos y su aplicación en distintos ejercicios. Sin embargo, mediante la práctica constante, la realización de pruebas de escritorio y la corrección de errores, logré fortalecer mi capacidad de análisis y comprender mejor la importancia de estas estructuras dentro del desarrollo de algoritmos y programas.
 
