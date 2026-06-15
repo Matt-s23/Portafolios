@@ -9,7 +9,9 @@
 
 # ESTRUCTURAS CONDICIONALES Y REPETITIVAS
 
-<img width="304" height="166" alt="image" src="https://github.com/user-attachments/assets/b16ac9bf-3422-461a-be40-4987968c570f" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b16ac9bf-3422-461a-be40-4987968c570f" alt="image" width="304">
+</p>
 
 ---
 
@@ -397,7 +399,6 @@ int main() {
 
 <img width="1196" height="739" alt="image" src="https://github.com/user-attachments/assets/768a8f18-99cd-4541-90c4-f170e6e7ea11" />
 
-4. Principales Dificultades y Reflexión Crítica
 
 ## Reflexión
 
