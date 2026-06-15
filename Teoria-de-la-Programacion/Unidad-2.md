@@ -9,6 +9,8 @@
 
 # ESTRUCTURAS CONDICIONALES Y REPETITIVAS
 
+<img width="304" height="166" alt="image" src="https://github.com/user-attachments/assets/b16ac9bf-3422-461a-be40-4987968c570f" />
+
 ---
 
 # 1. Estructuras Condicionales
@@ -399,19 +401,14 @@ int main() {
 
 ## Reflexión
 
-El desarrollo de esta unidad me permitió comprender que la programación no consiste únicamente en escribir código, sino en aprender a resolver problemas mediante un razonamiento lógico y estructurado. Durante el estudio de las estructuras condicionales y repetitivas entendí cómo un programa puede tomar decisiones y repetir procesos automáticamente dependiendo de ciertas condiciones establecidas.
+El desarrollo de esta unidad me permitió comprender que la programación va más allá de escribir código, ya que requiere aplicar un razonamiento lógico para resolver problemas de manera organizada. Durante el aprendizaje de las estructuras condicionales y repetitivas, tuve algunas dificultades para entender el funcionamiento de los ciclos y su aplicación en distintos ejercicios. Sin embargo, mediante la práctica constante, la realización de pruebas de escritorio y la corrección de errores, logré fortalecer mi capacidad de análisis y comprender mejor la importancia de estas estructuras dentro del desarrollo de algoritmos y programas.
 
-Una de las mayores dificultades que tuve fue comprender el funcionamiento de los ciclos `for` y `while`, ya que al inicio resultaban confusos debido a la manera en que controlan las repeticiones dentro de un programa. En algunos ejercicios se me dificultaba identificar cuándo debía utilizar cada estructura y cómo funcionaban las variables contadoras y acumuladoras dentro del ciclo. También tuve problemas al elaborar diagramas de flujo relacionados con estructuras repetitivas, porque era necesario organizar correctamente la secuencia lógica del proceso para evitar errores.
-
-Sin embargo, mediante la práctica constante, las pruebas de escritorio y la corrección de errores en los programas, logré entender mejor el comportamiento de las estructuras repetitivas y su importancia dentro de la programación. Poco a poco fui desarrollando una mejor capacidad de análisis para identificar errores lógicos y mejorar la organización de los algoritmos.
 
 ---
 
 # 5. Conclusión
 
-En conclusión, esta unidad fortaleció significativamente mi comprensión sobre las estructuras condicionales y repetitivas, las cuales representan una base fundamental en el desarrollo de programas. Aprendí que las estructuras condicionales permiten que un sistema tome decisiones dependiendo de determinadas situaciones, mientras que las estructuras repetitivas ayudan a automatizar tareas que deben ejecutarse varias veces.
-
-Además, comprendí la importancia de realizar pruebas de escritorio antes de ejecutar un programa, ya que este proceso facilita la detección de errores y mejora la lógica del algoritmo. El uso de pseudocódigo, diagramas de flujo y lenguaje C permitió relacionar la teoría con la práctica, fortaleciendo mi pensamiento lógico-computacional y mi capacidad para resolver problemas mediante programación.
+En conclusión, esta unidad me permitió fortalecer mis conocimientos sobre las estructuras condicionales y repetitivas, comprendiendo su importancia dentro de la programación. Aprendí que las estructuras condicionales permiten tomar decisiones según determinadas condiciones, mientras que las estructuras repetitivas facilitan la automatización de procesos que requieren ejecutarse varias veces. Además, entendí la utilidad de las pruebas de escritorio, el pseudocódigo y los diagramas de flujo para diseñar algoritmos más eficientes y detectar errores antes de implementar un programa. Todo esto contribuyó al desarrollo de mi pensamiento lógico y a una mejor capacidad para resolver problemas mediante la programación.
 
 ---
 
