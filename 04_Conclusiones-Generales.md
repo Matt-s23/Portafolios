@@ -4,18 +4,32 @@
 
 # CONCLUSIONES GENERALES
 
+<p align="center">
+ <img width="646" height="517" alt="image" src="https://github.com/user-attachments/assets/7bc8b3a9-97b9-495b-a69a-50b02233bccf" />
+</p>
 
 
 <div style="text-align: justify;">
 
-Al llegar al final de este ciclo, y viendo las tres unidades del portafolio en conjunto, puedo notar con claridad cómo cada una construyó sobre la anterior. Todo partió de algo tan simple como aprender a pensar en pasos ordenados: entender qué es un algoritmo, expresarlo en pseudocódigo y representarlo en un diagrama de flujo antes de escribir cualquier línea de código real. En ese momento no dimensionaba del todo la importancia de esa base, pero conforme avanzaba en las siguientes unidades me di cuenta de que absolutamente todo lo que vino después —condicionales, ciclos, funciones, arreglos— seguía apoyándose en esa misma lógica de descomponer un problema en pasos precisos, definidos y finitos.
+## Conclusión
 
-La Unidad 2 fue el punto donde mis programas dejaron de ser simples secuencias de instrucciones para empezar a "decidir" y "repetir". Aprender las estructuras condicionales me permitió entender cómo un programa puede reaccionar de forma distinta según los datos que recibe, y las estructuras repetitivas me mostraron que gran parte de la programación consiste en evitar repetir código de forma manual, delegando esa repetición a un ciclo bien construido. El ejercicio del promedio de notas fue clave para mí, porque ahí vi cómo un condicional y un ciclo trabajan juntos dentro de un mismo algoritmo, cada uno resolviendo una parte distinta del problema.
+Para finalizar el primer ciclo, aprendí las siguientes conclusiones:
 
-La Unidad 3 fue, en mi experiencia, la que exigió el salto de pensamiento más grande. Pasar de escribir todo dentro de `main()` a organizar el programa en funciones independientes me obligó a pensar no solo en qué instrucciones necesitaba, sino en cómo dividir el problema en tareas más pequeñas y responsables de una sola cosa. Sumado a esto, trabajar con arreglos me permitió ver cómo se puede manejar un conjunto completo de datos —ya sea una lista, una tabla o una estructura de más dimensiones— sin necesidad de declarar una variable por cada dato individual.
+### 1. Importancia de la lógica y los algoritmos
 
-Viendo el recorrido completo, siento que este portafolio documenta no solo tres temas distintos de programación, sino una progresión real en mi forma de razonar frente a un problema: de "¿qué pasos sigo?" en la Unidad 1, pasé a "¿cómo decido y repito?" en la Unidad 2, y llegué a "¿cómo organizo y estructuro toda la información?" en la Unidad 3. Considero que esta base —algoritmos, estructuras de control, modularidad y estructuras de datos— es exactamente el tipo de fundamento que necesitaré en las asignaturas más avanzadas de la carrera, y me deja con la confianza de que, sin importar el lenguaje o la herramienta que use en el futuro, la lógica detrás de resolver un problema seguirá siendo la misma que practiqué aquí.
+Aprendí que la programación no comienza escribiendo código, sino entendiendo cómo resolver un problema de manera ordenada y lógica. Durante la primera unidad comprendí la importancia de identificar entradas, procesos y salidas, además de representar las soluciones mediante pseudocódigo y diagramas de flujo antes de implementarlas en un lenguaje de programación. Esta base fortaleció mi forma de razonar y me permitió entender que todo programa nace de una secuencia de pasos bien definidos. Al final descubrí que dedicar unos minutos a planificar evita pasar horas preguntándome por qué el programa no funciona.
 
+### 2. Uso de estructuras de control para tomar decisiones y repetir procesos
+
+En la segunda unidad aprendí a utilizar estructuras condicionales y repetitivas para desarrollar programas más dinámicos y eficientes. Comprendí cómo un programa puede tomar decisiones según la información que recibe y cómo los ciclos permiten automatizar tareas repetitivas sin necesidad de escribir el mismo código una y otra vez. Los ejercicios realizados me ayudaron a relacionar condiciones, contadores y acumuladores dentro de un mismo algoritmo. Además, confirmé que un pequeño error, como olvidar un punto y coma o una llave, puede hacer perder más tiempo del que uno quisiera admitir.
+
+### 3. Organización del código y manejo de múltiples datos
+
+En la tercera unidad aprendí a organizar mejor mis programas mediante funciones y arreglos. Comprendí que dividir un problema en funciones independientes facilita la lectura, el mantenimiento y la reutilización del código, mientras que los arreglos permiten manejar grandes cantidades de información de forma ordenada y eficiente. Esta unidad me enseñó a pensar en la estructura completa del programa y no solo en instrucciones aisladas. También entendí que poner nombres claros a las funciones ayuda mucho cuando, días después, uno intenta entender su propio código y descubre que el verdadero desafío era leer lo que uno mismo escribió.
+
+En conjunto, considero que este primer ciclo me permitió desarrollar una base sólida en programación, desde la construcción de algoritmos hasta la organización de programas más completos. Ahora comprendo que, independientemente del lenguaje de programación que utilice en el futuro, la lógica para analizar problemas, tomar decisiones, repetir procesos y estructurar soluciones seguirá siendo la misma. Y, aunque seguramente todavía me esperan muchos errores de compilación, ahora sé que cada uno de ellos también forma parte del proceso de aprendizaje.
+
+gracias :D
 </div>
 
 ---
