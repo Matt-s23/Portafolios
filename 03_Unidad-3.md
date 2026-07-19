@@ -110,6 +110,10 @@ Al ejecutar este programa, dentro de `aplicarDescuento` el precio se muestra ya 
 
 ### 1.3 Paso de Parámetros por Referencia
 
+<p align="center">
+<!-- PEGAR AQUÍ UNA IMAGEN QUE MUESTRE EL PASO DE PARÁMETROS POR REFERENCIA O EL USO DE PUNTEROS -->
+</p>
+
 En el paso por referencia, en lugar de enviar una copia del dato, se envía la **dirección de memoria** de la variable mediante un puntero. Esto permite que la función acceda directamente a la variable original y la modifique, de modo que los cambios sí se conservan al terminar la función.
 
 #### Pseudocódigo
@@ -154,8 +158,6 @@ int main() {
 
 Aquí, `stockActual` sí queda modificado después de llamar a la función, porque `aumentarStock` no trabajó con una copia sino con la dirección de memoria real de la variable, a través del puntero `cantidad`.
 
-> **Nota:** el paso por referencia resulta especialmente útil cuando se necesita que una función modifique varias variables a la vez, o cuando se trabaja con estructuras de datos grandes, ya que evita el costo de copiar toda la información en memoria.
-
 </div>
 
 ---
@@ -175,6 +177,10 @@ Un arreglo es una estructura que permite almacenar varios valores del mismo tipo
 ---
 
 ### 2.2 Arreglo Unidimensional
+
+<p align="center">
+<!-- PEGAR AQUÍ UNA IMAGEN DE UN ARREGLO O VECTOR UNIDIMENSIONAL -->
+</p>
 
 El arreglo unidimensional, o vector, organiza los datos en una sola fila, accesible mediante un único índice. Es útil para representar listas simples, como una serie de mediciones tomadas a lo largo de varios días.
 
@@ -367,7 +373,9 @@ Promedio semanal: 22.14 — Clasificación: Semana templada
 
 **Compilación y ejecución**
 
-[PEGA_AQUÍ_TU_IMAGEN_DE_COMPILACIÓN_Y_EJECUCIÓN]
+<p align="center">
+<!-- PEGAR AQUÍ LA CAPTURA DE LA COMPILACIÓN Y EJECUCIÓN DEL PROGRAMA -->
+</p>
 
 </div>
 
