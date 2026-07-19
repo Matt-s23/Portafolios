@@ -2,13 +2,23 @@
 
 ---
 
+<p align="center">
+  <img width="526" height="525" alt="image" src="https://github.com/user-attachments/assets/908f81a6-7d0c-49e3-8ffe-60559510cd3a" />
+
+</p>
+
 # DECLARACIÓN DE USO DE HERRAMIENTAS DE APOYO
 
 ---
 
-Durante la elaboración de este portafolio se utilizaron diversas herramientas digitales de apoyo para colaborar en el proceso de redacción, revisión y organización del documento. Estas herramientas sirvieron como complemento para mejorar la claridad de las explicaciones, corregir aspectos ortográficos y gramaticales, optimizar la estructura del contenido en formato Markdown, verificar la coherencia de la información presentada y realizar sugerencias de presentación que facilitaran la organización del trabajo. En todo momento fueron utilizadas únicamente como un recurso de apoyo, mientras que el análisis, la comprensión de los contenidos, el desarrollo de los ejercicios, la elaboración del código, las pruebas realizadas y las conclusiones finales corresponden a mi propio proceso de aprendizaje y trabajo académico.
+Con el propósito de mantener la transparencia académica durante la elaboración de este portafolio, declaro que se utilizaron diversas herramientas digitales de apoyo como recurso complementario en el desarrollo del documento. Estas herramientas fueron empleadas únicamente para asistir en tareas relacionadas con la organización, revisión y presentación del contenido, sin reemplazar el proceso personal de aprendizaje ni la resolución de las actividades propuestas en la asignatura.
+
+Su utilización permitió mejorar la redacción de algunos apartados, corregir aspectos ortográficos y gramaticales, organizar el contenido en formato Markdown, optimizar la estructura y navegación entre los documentos del portafolio, además de verificar la claridad y coherencia de las explicaciones desarrolladas. También fueron utilizadas para identificar posibles errores de formato y sugerir mejoras en la presentación general del documento.
+
+Es importante señalar que el análisis de los problemas, la investigación realizada, el desarrollo de los algoritmos, la elaboración del pseudocódigo, la implementación de los programas en lenguaje C, la ejecución de las pruebas, así como las reflexiones, conclusiones y evidencias presentadas, corresponden a mi propio trabajo y representan el aprendizaje adquirido durante el desarrollo de la asignatura.
 
 ---
+
 
 ## 🔗 Navegación
 
